@@ -1,0 +1,1997 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Exo", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a,
+span {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+div.navbar {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 100px;
+  position: fixed;
+  left: 10%;
+  right: 10%;
+  z-index: 1000;
+  margin-top: 10px;
+}
+
+div.navbar div.container div.navname span.color {
+  color: orangered;
+}
+
+div.navbar div.container div.navname {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+div.navbar div.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 19px;
+  align-items: center;
+}
+
+div.navbar div.links ul {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+div.navbar div.links ul li {
+  list-style: none;
+  font-size: 16px;
+  font-weight: 800;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+div.navbar div.links ul li i#star {
+  color: gray;
+}
+
+div.navbar div.links ul li a {
+  transition: all 0.25s;
+}
+
+div.navbar div.links ul li a:hover {
+  color: orangered;
+
+
+}
+
+div.navbar div.container div.button button {
+  border: 2px solid black;
+  padding: 8px 32px;
+  border-radius: 50px;
+  color: black;
+  background-color: yellow;
+  font-size: 16px;
+  font-weight: 900;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+div.navbar div.container div.button button:hover {
+  transform: translate(5px, 5px);
+}
+
+
+/* hero section */
+
+div.hero {
+  background-color: oklch(0.94 0.13 101.54 / 1);
+  /* height: 100vh; */
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+div.shadow {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  background-color: rgba(0, 0, 0, 0.39);
+  left: 4%;
+  top: 10%;
+  transform: rotate(10deg);
+}
+
+div.shadow2 {
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  background-color: rgb(205, 133, 63, 0.4);
+  top: 15%;
+  right: 4%;
+  transform: rotate(15deg);
+}
+
+div.hero div.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 90px 0;
+
+}
+
+div.hero div.container div.content {
+  width: 50%;
+  padding-top: 65px;
+}
+
+div.hero div.container div.img {
+  position: relative;
+  transition: translate .025s;
+}
+
+div.hero div.container div.img p {
+  position: absolute;
+  top: -3%;
+  right: -2%;
+  z-index: 2;
+  padding: 10px;
+  transform: rotate(10deg);
+  background-color: red;
+  color: white;
+  box-shadow: 3px 3px 0 black;
+  width: fit-content;
+  font-weight: 800;
+}
+
+div.hero div.container div.img img {
+  width: 550px;
+  border: 4px solid black;
+  box-shadow: 10px 8px 0 black;
+  transform: rotate(2deg);
+  height: 350px;
+  object-fit: cover;
+  transition: all 0.25s;
+}
+
+div.hero div.container div.img img:hover {
+  transform: translate(-15px, -10px);
+}
+
+
+
+div.hero div.container div.head p {
+  color: white;
+  background-color: black;
+  padding: 20px 13px;
+
+  width: 100%;
+  transform: rotate(-2deg);
+  box-shadow: 8px 8px 0 black;
+}
+
+div.hero div.container div.head p#trendingnow {
+  width: fit-content;
+  padding: 3px 8px;
+  margin: 0;
+}
+
+
+
+div.hero div.container div.content h2 {
+  font-size: 65px;
+  font-weight: 900;
+  text-shadow: 3px 3px #000c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 60px;
+}
+
+div.hero div.container div.content h2 span.red {
+  color: red;
+}
+
+div.hero div.container div.content h2 span.blue {
+  color: blue;
+}
+
+div.hero div.container div.content p.desc {
+  background-color: #f2f2f2;
+  border: 4px solid black;
+  padding: 20px;
+  font-size: 22px;
+  width: fit-content;
+  box-shadow: 8px 8px 0 black;
+  width: 510px;
+}
+
+div.hero div.container div.content div.buttonhero {
+  display: flex;
+  gap: 10px;
+}
+
+div.hero div.container div.content div.buttonhero button.start {
+  color: white;
+  background-color: black;
+  box-shadow: 6px 6px 0 black;
+  border: 2px solid black;
+  padding: 0 16px;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+}
+
+div.hero div.container div.content div.buttonhero button.watch {
+  color: black;
+  background-color: white;
+  box-shadow: 6px 6px 0 black;
+  padding: 24px 16px;
+  border: 2px solid black;
+  width: 40%;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.25s ease;
+
+}
+
+div.hero div.container div.content div.buttonhero button.start:hover,
+div.hero div.container div.content div.buttonhero button.watch:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 0 0 0 black;
+}
+
+
+
+/* Latest Articles Section */
+
+div.latestarticles {
+  background-color: whitesmoke;
+  padding: 80px 0;
+  display: flex;
+}
+
+
+div.latestarticles div.container {
+  width: 85%;
+  margin-inline: auto;
+  display: flex;
+  padding-inline: 30px;
+}
+
+div.latestarticles div.container div.latest {
+  width: 65%;
+
+
+}
+
+div.latestarticles div.container div.latestcontent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+
+}
+
+div.latestarticles div.container div.latestcontent h1 {
+  font-size: 40px;
+  font-weight: 900;
+
+
+}
+
+div.latestarticles div.container div.latest div.latestcontent p {
+  box-shadow: 3px 3px 0 black;
+  transform: rotate(4deg);
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 12px;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 {
+  box-shadow: 3px 3px 0 black;
+  border: 3px solid black;
+  display: flex;
+  position: relative;
+  transition: all 0.25s;
+  background-color: white;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 black;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1:hover h2 {
+  color: red;
+}
+
+
+div.latestarticles div.container div.latest div.cards div.card1 div.container {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 div.container p#new {
+  position: absolute;
+  top: 16px;
+  left: 125px;
+  transform: rotate(4deg);
+  border: 2px solid black;
+  background-color: red;
+  color: white;
+  box-shadow: 3px 3px 0 black;
+  width: 40px;
+  text-align: center;
+  padding-inline: 6px;
+  width: fit-content;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 div.container img {
+  width: 160px;
+  height: 128px;
+  border: 2px black solid;
+  margin-top: 20px;
+  margin-right: 30px;
+  object-fit: cover;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 div.container div.content p#tech {
+  background-color: yellow;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  width: 70px;
+  text-align: center;
+  transform: rotate(-1deg);
+  font-weight: 500;
+  padding-inline: 6px;
+  width: fit-content;
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 div.img img {
+
+  width: 40px;
+  height: 32px;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 div.container div.content div.icons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card1 div.container div.content div.icons div#icon4 {
+  color: red;
+}
+
+
+div.latestarticles div.container div.latest div.cards div.card2 {
+  box-shadow: 3px 3px 0 black;
+  border: 3px solid black;
+  display: flex;
+  position: relative;
+  margin-block: 30px;
+  transition: all 0.25s ease;
+  background-color: white;
+
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card2:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 black;
+}
+
+div.latestarticles div.container div.latest div.cards div.card2:hover h2 {
+  color: blue;
+}
+
+
+div.latestarticles div.container div.latest div.cards div.card2 div.container {
+  display: flex;
+  width: 90%;
+  padding: 20px 0;
+  justify-content: center;
+  position: relative;
+}
+
+div.latestarticles div.container div.latest div.cards div.card2 div.container p#hot {
+  position: absolute;
+  top: 11px;
+  left: 125px;
+  transform: rotate(-4deg);
+  border: 2px solid black;
+  background-color: blue;
+  color: white;
+  box-shadow: 3px 3px 0 black;
+  width: 40px;
+  text-align: center;
+  padding-inline: 4px;
+  width: fit-content;
+}
+
+div.latestarticles div.container div.latest div.cards div.card2 div.container img {
+  width: 160px;
+  height: 128px;
+  border: 2px black solid;
+  margin-top: 20px;
+  margin-right: 30px;
+  object-fit: cover;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card2 div.container div.content p#design {
+  background-color: mediumseagreen;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  width: 70px;
+  text-align: center;
+  transform: rotate(1deg);
+  font-weight: 500;
+  padding-inline: 4px;
+  width: fit-content;
+
+}
+
+
+
+div.latestarticles div.container div.latest div.cards div.card2 div.img img {
+
+  width: 40px;
+  height: 32px;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card2 div.container div.content div.icons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card2 div.container div.content div.icons div#icon4 {
+  color: red;
+}
+
+
+div.latestarticles div.container div.latest div.cards div.card3 {
+  box-shadow: 3px 3px 0 black;
+  border: 3px solid black;
+  display: flex;
+  position: relative;
+  margin-block: 30px;
+  transition: all 0.25s ease;
+  background-color: white;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card3:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 black;
+}
+
+div.latestarticles div.container div.latest div.cards div.card3:hover h2 {
+  color: purple;
+}
+
+
+div.latestarticles div.container div.latest div.cards div.card3 div.container {
+  display: flex;
+  width: 90%;
+  padding: 20px 0;
+  justify-content: center;
+  position: relative;
+}
+
+div.latestarticles div.container div.latest div.cards div.card3 div.container p#VIRAL {
+  position: absolute;
+  top: 11px;
+  left: 110px;
+  transform: rotate(40deg);
+  border: 2px solid black;
+  background-color: purple;
+  color: white;
+  box-shadow: 3px 3px 0 black;
+  width: fit-content;
+  text-align: center;
+  padding-inline: 6px;
+}
+
+div.latestarticles div.container div.latest div.cards div.card3 div.container img {
+  width: 160px;
+  height: 128px;
+  border: 2px black solid;
+  margin-top: 20px;
+  margin-right: 30px;
+  object-fit: cover;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card3 div.container div.content p#CULTURE {
+  background-color: palevioletred;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 4px 4px black;
+  width: fit-content;
+  text-align: center;
+  transform: rotate(-2deg);
+  font-weight: 500;
+  padding-inline: 5px;
+}
+
+
+
+div.latestarticles div.container div.latest div.cards div.card3 div.img img {
+
+  width: 40px;
+  height: 32px;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card3 div.container div.content div.icons {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+div.latestarticles div.container div.latest div.cards div.card3 div.container div.content div.icons div#icon4 {
+  color: red;
+}
+
+
+
+div.latestarticles div.container div.latest div.button {
+  display: flex;
+  justify-content: center;
+
+}
+
+div.latestarticles div.container div.latest div.button button {
+  color: white;
+  border: 2px solid black;
+  padding: 16px 48px;
+  box-shadow: 5px 5px 0 black;
+  background-color: black;
+  width: 330px;
+  height: 60px;
+  font: 20px;
+  font-weight: 900;
+  transition: all 0.4s ease;
+}
+
+div.latestarticles div.container div.latest div.button button:hover {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0;
+
+
+
+}
+
+
+
+/* reding now */
+
+
+
+
+div.latestarticles div.trending {
+  position: sticky;
+  top: 30px;
+  width: 35%;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 6px;
+  height: fit-content;
+}
+
+div.latestarticles div.trending div.numbers {
+  border: 5px black solid;
+  box-shadow: 5px 5px 0 black;
+  width: 100%;
+  height: fit-content;
+  margin-left: 0px;
+  background-color: white;
+}
+
+div.latestarticles div.trending {
+  position: sticky;
+  top: 30px;
+
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+div.latestarticles div.trending div.numbers div.containernum {
+  width: 90%;
+  margin-inline: auto;
+}
+
+
+div.latestarticles div.trending div.numbers div.containernum div#item1 {
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item1 div.item1cont {
+  width: fit-content;
+  align-items: start;
+  margin-left: 50px;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item1 div.item1con:hover h3 {
+  color: red;
+}
+
+
+div.latestarticles div.trending div.numbers div.containernum div#item1 span {
+  width: 36px;
+  height: 60px;
+  font-size: 50px;
+  color: red;
+  font-weight: 900;
+
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item2 {
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item2 div.item2cont {
+  width: fit-content;
+  align-items: start;
+  margin-left: 50px;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item2 span {
+  width: 36px;
+  height: 60px;
+  font-size: 50px;
+  color: blue;
+  font-weight: 900;
+
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item3 {
+
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item3 div.item3cont {
+  width: fit-content;
+  align-items: start;
+  margin-left: 50px;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item3 span {
+  width: 36px;
+  height: 60px;
+  font-size: 50px;
+  color: purple;
+  font-weight: 900;
+
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item1:hover {
+  cursor: pointer;
+
+
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item1:hover h3 {
+  color: red;
+  cursor: pointer;
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item2:hover {
+  cursor: pointer;
+
+
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item2:hover h3 {
+  color: blue;
+  cursor: pointer;
+}
+
+
+div.latestarticles div.trending div.numbers div.containernum div#item3:hover {
+  cursor: pointer;
+
+
+}
+
+div.latestarticles div.trending div.numbers div.containernum div#item3:hover h3 {
+  color: purple;
+  cursor: pointer;
+}
+
+div.latestarticles div.trending div.categroris {
+  margin-top: 15px;
+
+  width: 100%;
+  height: fit-content;
+  border: 3px solid black;
+  box-shadow: 5px 5px 0 black;
+  background-color: white;
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont {
+  padding: 32px 32px;
+
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 0;
+
+
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#TECH {
+  border: 2px solid black;
+  padding: 12px 16px;
+  background-color: rgb(255, 255, 144);
+  margin-bottom: 25px;
+  transition: all 0.25s;
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#TECH:hover {
+  background-color: yellow;
+  box-shadow: 5px 5px 0 black;
+  transform: translate(-5px, -5px);
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#DESIGN {
+  border: 2px solid black;
+  padding: 12px 16px;
+  background-color: rgb(89, 133, 89);
+  transition: all 0.25s;
+  margin-bottom: 25px;
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#DESIGN:hover {
+  background-color: green;
+  box-shadow: 5px 5px 0 black;
+  transform: translate(-5px, -5px);
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#CULTURE {
+  border: 2px solid black;
+  padding: 12px 16px;
+  background-color: pink;
+  margin-bottom: 25px;
+  transition: all 0.25s;
+
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#CULTURE:hover {
+  background-color: palevioletred;
+  box-shadow: 5px 5px 0 black;
+  transform: translate(-5px, -5px);
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#OPINION {
+  border: 2px solid black;
+  padding: 12px 16px;
+  background-color: rgb(201, 201, 255);
+  margin-bottom: 25px;
+  transition: all 0.25s;
+
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#OPINION:hover {
+  background-color: purple;
+  box-shadow: 5px 5px 0 black;
+  transform: translate(-5px, -5px);
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#TUTORIALS {
+  border: 2px solid black;
+  padding: 12px 16px;
+  background-color: rgb(126, 102, 126);
+  transition: all 0.25s;
+
+}
+
+div.latestarticles div.trending div.categroris div.categoriscont p#TUTORIALS:hover {
+  background-color: plum;
+  box-shadow: 5px 5px 0 black;
+  transform: translate(-5px, -5px);
+}
+
+
+/* MEET THE AUTHORS */
+
+div.authors {
+  background-color: oklch(87.9% .169 91.605);
+  ;
+  display: flex;
+  justify-content: center;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  position: relative;
+}
+
+
+div.shadow1 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.39);
+  left: 5%;
+  top: 5%;
+  transform: rotate(10deg);
+}
+
+div.authors div.shadow2 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: rgba(0, 0, 0, 0.39);
+  top: 5%;
+  right: 5%;
+  transform: rotate(-10deg);
+}
+
+
+
+
+
+div.authors div.container {
+  width: 85%;
+  padding-block: 40px;
+  padding-inline: 20px;
+}
+
+div.authors div.container div.title {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+
+}
+
+div.authors div.container div.title h1 {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0px 0px 5px;
+  margin-top: 0;
+}
+
+div.authors div.container div.title p {
+  font-size: 20px;
+  color: gray;
+  margin-top: 0;
+}
+
+div.authors div.container div.title p::after {
+  content: "";
+  width: 150px;
+  height: 10px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(3deg);
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+div.authors div.container div.cards {
+  display: flex;
+  gap: 35px;
+  justify-content: space-between;
+
+  padding-block: 30px;
+
+}
+
+div.authors div.container div.cards div.card div.img {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+div.authors div.container div.cards div.card div.img img {
+
+
+  width: 128px;
+  height: 128px;
+  border: 5px solid black;
+  margin-bottom: 15px;
+}
+
+div.authors div.container div.cards div.card div.container {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+p.culture,
+p.UX,
+p.tech {
+  margin-top: 0;
+}
+
+div.authors div.container div.cards div.card {
+  transition: all 0.25s;
+
+
+}
+
+div.authors div.container div.cards div.card:hover {
+  transform: translate(-4px, -4px);
+
+}
+
+
+div.authors div.container div.cards div.card p.head {
+  font-size: 28px;
+  margin-block: 0;
+  font-weight: 900;
+}
+
+div.authors div.container div.cards div.card p.tag {
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  width: fit-content;
+}
+
+div.authors div.container div.cards div#card1 p.tag {
+  background-color: aquamarine;
+  padding: 3px 8px;
+
+}
+
+div.authors div.container div.cards div#card2 div.container p.tag {
+  background-color: blue;
+  padding: 3px 8px;
+  transform: rotate(-15deg);
+}
+
+div.authors div.container div.cards div#card3 div.container p.tag {
+  background-color: purple;
+  padding: 3px 8px;
+  transform: rotate(15deg);
+
+}
+
+
+div.authors div.container div.cards div#card1 {
+  border: 3px solid black;
+  box-shadow: 7px 7px 0 black;
+  background-color: rgb(255, 255, 180);
+  width: 33.3%;
+
+}
+
+div.authors div.container div.cards div#card1:hover p.head {
+  color: red;
+}
+
+div.authors div.container div.cards div#card2:hover p.head {
+  color: lightseagreen;
+
+}
+
+div.authors div.container div.cards div#card3:hover p.head {
+  color: palevioletred;
+
+}
+
+div.authors div.container div.cards div#card1 p.tag {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  transform: rotate(7deg);
+}
+
+div.authors div.container div.cards div#card1 p.desc {
+  width: 75%;
+  text-align: center;
+
+}
+
+div.authors div.container div.cards div#card2 {
+  border: 3px solid black;
+  box-shadow: 7px 7px 0 black;
+  background-color: rgb(255, 255, 180);
+  width: 33.3%;
+  background-color: brown;
+}
+
+div.authors div.container div.cards div#card2 p.tag {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  transform: rotate(7deg);
+}
+
+div.authors div.container div.cards div#card2 p.desc {
+  width: 75%;
+  text-align: center;
+
+}
+
+div.authors div.container div.cards div#card3 {
+  border: 3px solid black;
+  box-shadow: 7px 7px 0 black;
+  background-color: darkviolet;
+  width: 33.3%;
+
+}
+
+div.authors div.container div.cards div#card3 p.tag {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  transform: rotate(7deg);
+
+}
+
+div.authors div.container div.cards div#card3 p.desc {
+  width: 75%;
+  text-align: center;
+
+}
+
+div.authors div.container div.cards div.card div.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+div.authors div.container div.cards div.card div.social-icons a {
+
+  border: 2px solid black;
+  padding: 10px 15px;
+  ;
+  background-color: black;
+  color: white;
+}
+
+div.authors div.container div.cards div.card div.social-icons a.socialtwitter {
+  transition: all 0.25s;
+
+}
+
+div.authors div.container div.cards div.card div.social-icons a.socialtwitter:hover {
+  color: white;
+  background-color: lightblue;
+  transform: scale(-4px, -4px);
+  box-shadow: 4px 4px 0 black;
+
+}
+
+div.authors div.container div.cards div.card div.social-icons a.sociallinkedin {
+  transition: all 0.25s;
+
+}
+
+div.authors div.container div.cards div.card div.social-icons a.sociallinkedin:hover {
+  color: white;
+  background-color: blue;
+  transform: scale(-4px, -4px);
+  box-shadow: 4px 4px 0 black;
+
+}
+
+div.authors div.container div.cards div.card div.social-icons a.socialinstagram {
+  transition: all 0.25s;
+
+}
+
+div.authors div.container div.cards div.card div.social-icons a.socialinstagram:hover {
+  color: white;
+  background-color: palevioletred;
+  transform: scale(-4px, -4px);
+  box-shadow: 4px 4px 0 black;
+
+}
+
+div.joinsection {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 50px 0;
+}
+
+div.joinsection div.container {
+  width: 80%;
+  margin-inline: auto;
+  margin-block: 0;
+}
+
+div.joinsection div.container div.headtitle {
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+div.joinsection div.container div.headtitle h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+div.person p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div.joinsection div.container div.headtitle::after {
+  content: "";
+  width: 100px;
+  height: 6px;
+  color: black;
+  background-color: black;
+  transform: rotate(6deg);
+  position: absolute;
+  left: 45%;
+  top: 130%;
+}
+
+div.joinsection div.container div.body {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+
+}
+
+div.joinsection div.container div.body div.content {
+  width: 50%;
+  font-size: 20px;
+
+}
+
+div.joinsection div.container div.body div.content div.feature {
+  padding-inline: 10px;
+  display: flex;
+  gap: 15px;
+  ;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+div.joinsection div.container div.body div.content p#head {
+  width: fit-content;
+  border: 4px solid black;
+  box-shadow: 3px 3px black;
+  padding: 15px 15px;
+  width: 90%;
+  background-color: white;
+}
+
+div.joinsection div.container div.body div.content div.feature p.p-tools {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+div.joinsection div.container div.body div.content div.feature div.featureiconred {
+  width: 48px;
+  height: 48px;
+  border: 3px solid black;
+  padding: 5px 5px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.joinsection div.container div.body div.content div.feature div.featureiconblue {
+  width: 48px;
+  height: 48px;
+  border: 3px solid black;
+  padding: 5px 5px;
+  color: white;
+  background-color: blue;
+  text-align: center;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.joinsection div.container div.body div.content div.feature div.featureiconpurple {
+  width: 48px;
+  height: 48px;
+  border: 3px solid black;
+  padding: 5px 5px;
+  color: white;
+  background-color: purple;
+  text-align: center;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.joinsection div.container div.body div.content div.feature div.featureicongreen {
+  width: 48px;
+  height: 48px;
+  border: 3px solid black;
+  padding: 5px 5px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.joinsection div.container div.body div.content h1 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+div.joinsection div.container div.body div.content button {
+
+  color: white;
+  background-color: black;
+  padding: 20px 00px;
+  width: 70%;
+  border: 3px solid black;
+  box-shadow: 5px 5px 0 black;
+  transition: all 0.25s;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 900;
+
+}
+
+div.joinsection div.container div.body div.content button:hover {
+  box-shadow: 0 0 0 black;
+  transform: translate(5px, 5px);
+
+}
+
+
+div.REBELS {
+  width: 50%;
+}
+
+
+div.REBELS div.box {
+
+  background-color: white;
+  box-shadow: 5px 5px 0 black;
+  border: 3px solid black;
+  height: fit-content;
+}
+
+div.REBELS div.box div.containercard {
+  padding: 30px 30px;
+
+}
+
+div.REBELS div.box div.containercard div.person {
+
+  border: 2px solid black;
+  margin-bottom: 25px;
+  color: black;
+  background-color: antiquewhite;
+  height: 250px;
+  height: fit-content;
+}
+
+div.REBELS div.box div.containercard div#person2 {
+  background-color: lightskyblue;
+}
+
+div.REBELS div.box div.containercard div#person3 {
+  background-color: hotpink;
+  margin-bottom: 10px;
+}
+
+div.REBELS div.box div.containercard div.person div.containerperson {
+  padding: 15px 15px;
+  font-weight: 600;
+
+}
+
+div.containerperson p.desc-pesron {
+  margin-bottom: 15px;
+}
+
+div.REBELS div.box div.containercard h3 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+p.titleperson {
+  font-weight: 200;
+  font-size: 15px;
+}
+
+div.REBELS div.box div.containercard div.person div.img {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  box-sizing: border-box;
+
+}
+
+div.REBELS div.box div.containercard div.person div.img h5 {
+  margin-top: 0;
+}
+
+div.REBELS div.box div.containercard div.person div.img div.content {
+  display: flex;
+  flex-direction: column;
+}
+
+div.REBELS div.box div.containercard div.person div.img div.content p {
+  margin-top: 0;
+}
+
+div.REBELS div.box div.containercard div.person div.img div.content h5 {
+  padding-top: 0px;
+  margin: 0;
+
+}
+
+div.REBELS div.box div.containercard div.person div.img div.personimg img {
+  width: 48px;
+  height: 48px;
+  border: 2px solid black;
+
+}
+
+div.footar {
+  background-color: black;
+  color: white;
+  height: fit-content;
+
+}
+
+div.footar div.container {
+  width: 80%;
+  margin-inline: auto;
+  padding-block: 60px;
+}
+
+div.footar div.container div.topcontainer {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+div.footar div.container div.topcontainer div.head div.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+
+}
+
+div.footar div.container div.topcontainer div.head {
+  width: 33.3%;
+
+
+}
+
+div.footar div.container div.topcontainer div.head div.logo div.graph i#logo {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+  padding: 15px 15px;
+  font-size: 25px;
+}
+
+div.footar div.container div.topcontainer div.head div.parag p {
+  width: fit-content;
+}
+
+div.footar div.container div.topcontainer div.categories ul {
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+div.footar div.container div.topcontainer div.categories ul li {
+  list-style: none;
+  margin-block: 8px;
+  ;
+
+}
+
+div.footar div.container div.topcontainer div.categories ul li a {
+  transition: all 0.25s;
+}
+
+div.footar div.container div.topcontainer div.categories ul li a:hover {
+  color: yellow;
+
+}
+
+div.footar div.container div.topcontainer div.categories h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+div.newsletter {
+  width: 33.3%;
+
+
+}
+
+div.newsletter h4 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+
+div.newsletter input {
+  width: 100%;
+  border: 1px solid white;
+  height: 50px;
+  background-color: black;
+  color: gray;
+  padding-left: 15px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+div.newsletter button {
+  text-align: center;
+  width: 100%;
+  border: 1px solid white;
+  height: 50px;
+  padding-left: 15px;
+  font-weight: 900;
+  color: black;
+  background-color: oklch(90.5% .182 98.111);
+  font-weight: 900;
+  font-size: 20px;
+  transition: all 0.25s;
+}
+
+div.newsletter button:hover {
+  background-color: orange;
+  transform: translate(3px, 3px);
+  cursor: pointer;
+}
+
+div.bottomcontainer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+div.bottomcontainer div.links {
+  display: flex;
+  gap: 20px;
+
+}
+
+div.bottomcontainer div.links a {
+  transition: all 0.25s;
+}
+
+div.bottomcontainer div.links a:hover {
+  color: yellow;
+}
+
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 1200px) {
+
+
+  div.navbar div.container {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  div.navbar {
+    width: 95%;
+    margin-inline: auto;
+    right: -20%;
+    left: -20%;
+  }
+
+  div.hero div.container {
+    gap: 15px;
+    padding-top: 125px;
+    width: 95%
+  }
+
+  div.hero div.container div.content {
+    padding-top: 20px;
+  }
+
+  div.hero div.container div.img img {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+  }
+
+  div.hero div.container div.img {
+    width: 50%;
+  }
+
+  div.latestarticles div.container {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  div.hero div.container div.content p.desc {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  div.latestarticles div.trending div.numbers div.containernum div#item1,
+  div.latestarticles div.trending div.numbers div.containernum div#item2,
+  div.latestarticles div.trending div.numbers div.containernum div#item3 {
+    align-items: center;
+
+  }
+
+  div.latestarticles div.trending div.numbers div.containernum div#item1 h3 {
+    padding-bottom: 0;
+
+
+  }
+
+  div.latestarticles div.container div.latest {
+    width: 65%;
+  }
+
+  div.latestarticles div.trending {
+    width: 35%;
+  }
+
+  div.latestarticles div.container div.latestcontent h1 {
+    font-size: 32px;
+  }
+
+  div.authors div.container div.cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+  }
+
+  div.authors div.container {
+    width: 100%;
+  }
+
+  div.authors div.container div.cards div#card1,
+  div.authors div.container div.cards div#card2,
+  div.authors div.container div.cards div#card3 {
+    width: 48%;
+  }
+
+  div.footar div.container div.bottomcontainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  div.joinsection div.container {
+    width: 95%;
+  }
+
+}
+
+
+@media screen and (max-width: 992px) {
+  div.navbar div.container div.links {
+    display: none;
+
+  }
+
+  div.navbar div.container {
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+
+  div.navbar {
+    width: 90%;
+    margin-inline: auto;
+    right: -20%;
+    left: -20%;
+  }
+
+  div.hero div.container {
+    justify-content: space-between;
+    gap: 75px;
+  }
+
+  div.hero div.container div.img img {
+    width: 100%;
+    height: 300px;
+  }
+
+  div.hero div.container div.content h2 {
+    font-size: 45px;
+  }
+
+  div.hero div.container div.content div.buttonhero button.start {
+    width: 40%;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    height: 50px;
+  }
+
+  div.hero div.container div.content div.buttonhero button.watch {
+
+    width: 40%;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    height: 50px;
+
+  }
+
+  div.hero div.container div.content p.desc {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  div.latestarticles {
+    flex-direction: column;
+  }
+
+  div.latestarticles div.container {
+    flex-direction: column;
+    width: 100%;
+
+  }
+
+  div.latestarticles div.container div.latest {
+    width: 100%;
+  }
+
+  div.latestarticles div.trending {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 35px;
+  }
+
+  div.latestarticles div.trending div.numbers,
+  div.latestarticles div.trending div.categroris {
+    width: 100%;
+  }
+
+  div.authors div.container div.cards {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+  }
+
+  div.authors div.container div.cards div#card1,
+  div.authors div.container div.cards div#card2,
+  div.authors div.container div.cards div#card3 {
+    width: 100%;
+  }
+
+  div.joinsection div.container div.body {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  div.joinsection div.container div.body div.content {
+    width: 100%;
+  }
+
+  div.REBELS div.box {
+    width: 100%;
+  }
+
+  div.REBELS {
+    width: 100%;
+  }
+
+  div.joinsection div.container div.body div.content button {
+    width: 50%;
+  }
+
+  div.footar div.container div.topcontainer {
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  div.footar div.container {
+    width: 90%;
+  }
+
+  div.newsletter {
+    width: 60%;
+  }
+
+  div.footar div.container div.topcontainer div.head {
+    width: 100%;
+  }
+
+  div.footar div.container div.bottomcontainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  div.hero div.container div.content h2 {
+    font-size: 50px;
+  }
+
+  div.hero div.container div.content {
+    width: 100%;
+  }
+
+  div.hero div.container div.content p.desc {
+    width: 100%;
+  }
+
+  div.hero div.container {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    gap: 50px;
+  }
+
+  div.hero div.container div.content div.buttonhero {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  div.hero div.container div.img {
+    width: 100%;
+  }
+
+  div.hero div.container div.img img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  div.authors div.container div.cards {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.authors div.container div.cards div#card1,
+  div.authors div.container div.cards div#card2,
+  div.authors div.container div.cards div#card3 {
+    width: 90%;
+
+  }
+
+  div.latestarticles div.container div.latest div.cards div.container div.content div.icons {
+    flex-direction: column;
+  }
+
+  div.latestarticles div.container div.latest div.cards {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  div.authors div.container div.cards div.card {
+    width: 100%;
+  }
+
+  div.authors div.container div.cards div#card1,
+  div.authors div.container div.cards div#card2,
+  div.authors div.container div.cards div#card3 {
+    width: 95%;
+  }
+
+  div.joinsection div.container {
+    flex-direction: column;
+  }
+
+  div.joinsection div.container div.body {
+    flex-direction: column;
+  }
+
+  div.joinsection div.container div.body div.content {
+    width: 95%;
+    align-items: center;
+  }
+
+  div.joinsection div.container div.body div.content p#head {
+    width: 100%;
+  }
+
+  div.REBELS {
+    width: 100%;
+  }
+
+  div.REBELS div.box {
+    width: 100%;
+  }
+
+  div.REBELS div.box div.containercard div.person div.img div.content {
+    justify-content: start;
+    align-items: start;
+  }
+
+  div.footar div.container div.topcontainer {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  div.footar div.container {
+    width: 90%;
+  }
+
+  div.footar div.container div.topcontainer div.head {
+    width: 100%;
+  }
+
+  div.newsletter {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  div.navbar div.container {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  div.hero div.container {
+    padding-top: 100px;
+    width: 90%;
+  }
+
+  div.hero div.container div.content h2 {
+    font-size: 28px;
+  }
+
+  div.hero div.container div.content h2 span {
+    font-size: 55px;
+  }
+
+  div.hero div.container div.img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  div.latestarticles div.trending {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  div.joinsection div.container div.body {
+    flex-direction: column;
+  }
+
+  div.hero div.container div.img img {
+    max-width: 100%;
+    height: 350px;
+
+  }
+
+  div.hero div.container div.content div.buttonhero {
+    width: 85%;
+  }
+
+  div.latestarticles div.container {
+    width: 100%;
+  }
+
+  div.latestarticles div.container div.latest div.cards div.card1 div.container div.content div.icons,
+  div.latestarticles div.container div.latest div.cards div.card2 div.container div.content div.icons,
+  div.latestarticles div.container div.latest div.cards div.card3 div.container div.content div.icons {
+    flex-direction: column;
+  }
+
+  div.latestarticles div.container div.latest div.latestcontent p {
+    display: none;
+  }
+
+  div.authors div.container div.cards div#card1 p.desc,
+  div.authors div.container div.cards div#card2 p.desc,
+  div.authors div.container div.cards div#card3 p.desc {
+
+    width: 100%;
+  }
+
+  div.authors div.container div.cards div#card1,
+  div.authors div.container div.cards div#card2,
+  div.authors div.container div.cards div#card3 {
+    width: 100%;
+  }
+
+  div.authors div.container {
+    width: 100%;
+  }
+
+  div.authors div.container div.cards {
+    width: 100%;
+  }
+
+  div.joinsection div.container {
+    width: 90%;
+  }
+
+  div.footar div.container div.topcontainer {
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start;
+  }
+
+  div.newsletter {
+    width: 100%;
+  }
+}
